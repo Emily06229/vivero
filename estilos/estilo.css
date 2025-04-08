@@ -1,0 +1,77 @@
+/*Aquí va a ir los estilos css para el index.html*/
+/*Establecemos un fondo y color de texto ´para el body*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color:black;
+    margin: 0;
+    padding: 0;
+}
+/*Definimos el estilo del título*/
+h1{
+    text-align: center;
+    color: green;
+    padding: 20px;
+    background-color: azure;
+    border-bottom: 3px solid green;
+}
+/*Definimos el estilo para los párrafos*/
+p{
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+    margin: 20px 0;
+    line-height: 1.6;
+}
+/*Definimos el estilo para imágenes*/
+img{
+    display: block;
+    margin: 20px auto;
+    border-radius: 5%;
+}
+/*Enlaces dentro de la página*/
+a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: green;
+    margin: 10px 0;
+    font-weight: bold;
+}
+/*Definimos el estilo para las secciones de la página*/
+section{
+    padding: 20%;
+    margin: 20px 0;
+    background-color: beige;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/*Definimos estilo para los formularios*/
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*Definimos el estilo para las etiquetas dentro del formulario*/
+label{
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+/*Definimos estilo para los campos de entrada*/
+input[type="text"]{
+    padding: 10px;
+    margin-top: 5px;
+    width: 80px;
+    max-width: 400px;
+    border: 2px solid green;
+    border-radius:5px;
+}
+/*Definimos el modelo de cajas para navegadores basados en webkit
+    googleChrome, internet explorer, edge*/ 
+    -webkit-box-sizing: border-box;
+    /*Definimos el modelo de cajas para navegadores basados en mozilla
+    firefox, opera*/
+    -moz-box-sizing: border-box;
+    /*Definimos el modelo de cajas para navegadores basados en el estandar*/
+    box-sizing: border-box;
