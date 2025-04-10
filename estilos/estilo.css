@@ -1,77 +1,208 @@
-/*Aquí va a ir los estilos css para el index.html*/
-/*Establecemos un fondo y color de texto ´para el body*/
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f4f4;
-    color:black;
+/* Aquí van los estilos CSS para el index.html */
+/*Definimos los estilos para el body*/
+/* Colocamos un fondo general para toda la página */
+body {
+    /*Elimina el margen por defecto de todos los elementos HTML*/
     margin: 0;
+    /*Elimina el padding por defecto de todos los elementos HTML*/
     padding: 0;
-}
-/*Definimos el estilo del título*/
-h1{
-    text-align: center;
-    color: green;
-    padding: 20px;
-    background-color: azure;
-    border-bottom: 3px solid green;
-}
-/*Definimos el estilo para los párrafos*/
-p{
-    font-size: 16px;
-    text-align: center;
-    padding: 10px;
-    margin: 20px 0;
-    line-height: 1.6;
-}
-/*Definimos el estilo para imágenes*/
-img{
-    display: block;
-    margin: 20px auto;
-    border-radius: 5%;
-}
-/*Enlaces dentro de la página*/
-a{
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    color: green;
-    margin: 10px 0;
-    font-weight: bold;
-}
-/*Definimos el estilo para las secciones de la página*/
-section{
-    padding: 20%;
-    margin: 20px 0;
-    background-color: beige;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-/*Definimos estilo para los formularios*/
-form{
+    /*Agregamos la fuente que utilizaremos en la página web*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    /*Colocamos la imágen de fondo desde carpeta 'imagenes' */
+    background-image: url('../imagenes/fondo.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    /* Usamos Flexbox para centrar el contenido */
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    min-height: 100vh; 
+    text-align: center; 
 }
-/*Definimos el estilo para las etiquetas dentro del formulario*/
-label{
-    margin-top: 10px;
-    font-weight: bold;
-    color: #333;
-}
-/*Definimos estilo para los campos de entrada*/
-input[type="text"]{
-    padding: 10px;
-    margin-top: 5px;
-    width: 80px;
-    max-width: 400px;
-    border: 2px solid green;
-    border-radius:5px;
-}
-/*Definimos el modelo de cajas para navegadores basados en webkit
-    googleChrome, internet explorer, edge*/ 
-    -webkit-box-sizing: border-box;
-    /*Definimos el modelo de cajas para navegadores basados en mozilla
-    firefox, opera*/
-    -moz-box-sizing: border-box;
-    /*Definimos el modelo de cajas para navegadores basados en el estandar*/
+
+/* Colocamos una capa semitransparente para mejorar contraste */
+.capa-fondo {
+    background-color: rgba(255, 255, 255, 0.85); 
+    padding: 40px; 
+    border-radius: 10px;
+    max-width: 95%; 
+    width: 100%; 
+    margin: 20px auto; 
     box-sizing: border-box;
+    position: relative; 
+    z-index: 1; 
+}
+
+/*Agregamos estilo al título principal */
+h1 {
+    color: #2e8b57;
+    text-shadow: 2px 2px 5px #ffffff;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 800px;  
+    box-sizing: border-box;  
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Agregamos estilo al párrafo introductorio */
+p {
+    font-size: 18px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 10px auto;
+}
+
+/* Agregamos estilo a la imágen del logo */
+img {
+    display: block;
+    margin: 20px auto;
+    border: 3px solid #2e8b57;
+    border-radius: 10%;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+    max-width: 100%;  
+    height: auto;     
+}
+
+a:hover {
+    background-color: #556b2f;
+}
+
+/* Ponemos estilo en la sección de productos */
+#productos {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 900px;
+    width: 90%;
+    margin: 30px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#productos table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#productos th, #productos td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+#productos th {
+    background-color: #6b8e23;
+    color: white;
+}
+
+#productos td img {
+    border-radius: 10%;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Ponemos estilo en la sección de contacto */
+#contacto {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 600px;
+    width: 90%;
+    margin: 30px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#contacto h2 {
+    color: #228b22;
+    margin-bottom: 20px;
+}
+
+#contacto ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#contacto ul li {
+    margin-bottom: 10px;
+}
+
+#contacto a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#contacto a:hover {
+    text-decoration: underline;
+}
+/* Colocamos el estilo al enlace de la ubicación*/
+a {
+    display: block;
+    text-align: center;
+    color: #fff;
+    background-color: #6b8e23;
+    padding: 10px;
+    margin: 10px auto;
+    width: 220px; 
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+/*Colocamos estilo en la sección del formulario */
+section {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 600px;
+    width: 90%;  
+    margin: 30px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/*Damos estilo a el título del formulario */
+section h2 {
+    color: #228b22;
+    margin-bottom: 20px;
+}
+
+/* Colocamos estilo en los campos del formulario */
+input[type="text"], input[type="email"], textarea {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+    font-size: 16px;  
+    width: 90%;  
+    padding: 10px;
+    margin: 10px auto;
+    display: block;
+    border: 2px solid #90ee90;
+    border-radius: 5px;
+    box-sizing: border-box; 
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    border-color: #32cd32;
+    outline: none;
+}
+
+/* Estilo para el botón de envío */
+button[type="submit"] {
+    background-color: #6b8e23;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+button[type="submit"]:hover {
+    background-color: #556b2f;
+}
+

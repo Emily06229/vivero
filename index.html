@@ -14,40 +14,113 @@
 </head>
 
 <body>
-    <!--Etiqueta de texto para el título-->
-    <h1>EL BANQUITO VIVERO ORGÁNICO</h1>
-    <!--Etiqueta de parrafo para pequeña apertura-->
-    <p>
-        Si estas buscando una manera natural y efectiva de mejorar la calidad <br>
-        de tu suelo y promover un crecimiento saludable de tus plantas, <br>
-        ¡Has llegado al lugar correcto! <br>
-    </p>
-    <hr>
-    <!--Etiqueta tipo imagen-->
-    <img src="imagenes/logo.jpg" alt="logo imagenes" width="500px" height="300px" style="border-radius: 10%;">
-    <br>
-    <a href="paginas/productos.html">Ir a Productos Orgánicos</a>
-    <br>
-    <a href="otraspaginas/contacto.html">Ir a Contactanos</a>
-    <br>
-    <!--Contenedores-->
-    <section>
-        <div>
-            <h2>Formulario</h2>
-        </div>
-        <!--Creado el formulario-->
-        <form action="">
-            <label for="">Nombre</label>
-            <input type="text" name="" id="" placeholder="Ingrese su nombre" required>
-            <br>
-            <label for="">Correo electónico</label>
-            <input type="text" name="" id="" placeholder="Ingrese su correo electónico" required>
-            <br>
-            <label for="">Comentario</label>
-            <input type="text" name="" id="" placeholder="Ingrese su comentario" required>
+    <!-- Colocamos una capa semitransparente encima del fondo-->
+    <div class="capa-fondo">
+        <header>
+            <!-- Título principal de la página -->
+            <h1>EL BANQUITO VIVERO ORGÁNICO</h1>
 
-        </form>
-    </section>
+            <!-- Agregamos un pequeño texto de introducción -->
+            <p>
+                Si estás buscando una manera natural y efectiva de mejorar la calidad <br>
+                de tu suelo y promover un crecimiento saludable de tus plantas, <br>
+                ¡Has llegado al lugar correcto! <br>
+            </p>
+            <hr>
+
+            <!--Agregaremos una imagen del logo en nuestra página web -->
+            <img src="imagenes/logo.jpg" alt="Logo de Vivero" width="500px" height="300px" style="border-radius: 10%;">
+        </header>
+        <!-- Sección de productos -->
+        <section id="productos">
+            <h2>Productos Orgánicos</h2>
+            <!--Creamos una tabla para mostrar los productos, junto con imagenes-->
+            <table border="2">
+                <thead>
+                    <!--Agregamos los encabezados de nuestra tabla-->
+                    <th>Nombre del Producto</th>
+                    <th>Referencia del Producto</th>
+                    <th>Descripción</th>
+                    <th>Precio</th>
+                </thead>
+                <tbody>
+                    <!--Colocamos una fila con celdas que contengan la información-->
+                    <tr>
+                        <td>Cascarilla de Arroz</td>
+                        <td><img src="imagenes/cascarilla_de_arroz.jpg" alt="Cascarilla de arroz" width="200px"
+                                height="200px"></td>
+                        <td>Cascarilla de arroz para los substratos y abonos orgánicos, 1kg</td>
+                        <td>$7.50</td>
+                    </tr>
+                    <tr>
+                        <td>Abono Orgánico</td>
+                        <td><img src="imagenes/abono_organico.jpg" alt="Abono orgánico" width="200px" height="200px">
+                        </td>
+                        <td>Abono orgánico, mezclado, 1 kg</td>
+                        <td>$4.00</td>
+                    </tr>
+                    <tr>
+                        <td>Tierra Negra</td>
+                        <td><img src="imagenes/tierra_negra.jpg" alt="Tierra negra" width="200px" height="200px"></td>
+                        <td>Tierra negra para cultivo, abonos y substratos, 1kg</td>
+                        <td>$10.00</td>
+                    </tr>
+                    <tr>
+                        <td>Turba</td>
+                        <td><img src="imagenes/turba.jpg" alt="Turba" width="200px" height="200px"></td>
+                        <td>Turba, componente de algunos substratos orgánicos, 1kg</td>
+                        <td>$13.50</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <br>
+
+        <!--Crearemos una sección de contacto -->
+        <section id="contacto">
+            <h2>Contactanos</h2>
+            <br>
+            <!--Agregamos una lista-->
+            <h3>Teléfono</h3>
+            <ul>
+                <li>0969092385</li>
+            </ul>
+            <br>
+            <h3>Redes Sociales</h3>
+            <ul>
+                <li>Instagram: @el_banquito_vivero</li>
+                <li>Facebook: Banquito Vivero</li>
+            </ul>
+            <br>
+            <h3>Dirección</h3>
+            <ul>
+                <li>Av. de la Prensa OE1_81, Quito 170104</li>
+                <li><a href="https://www.google.com/maps?s=web&sca_esv=696f1988d90d060b&lqi=Ch12aXZlcm8gZGUgcHJvZHVjdG9zIG9yZ2FuaWNvc0i8hNHb3biAgAhaLRAAEAEQAhADGAAiHXZpdmVybyBkZSBwcm9kdWN0b3Mgb3JnYW5pY29zMgJlc5IBDXBsYW50X251cnNlcnmqAWkQASohIh12aXZlcm8gZGUgcHJvZHVjdG9zIG9yZ2FuaWNvcygOMh8QASIbEdKWm2-oLU1HNR0QvEM2zKodSNF7V4wG7lJhMiEQAiIddml2ZXJvIGRlIHByb2R1Y3RvcyBvcmdhbmljb3M&phdesc=lL_TLFdwr20&vet=12ahUKEwiRhvLR7b2MAxVWsoQIHdPUAVcQ1YkKegQIHRAB..i&cs=0&um=1&ie=UTF-8&fb=1&gl=ec&sa=X&geocode=KWveL_Ofm9WRMQ4gYnk8NvIn&daddr=Av.+de+la+Prensa+OE1_81,+Quito+1701040"
+                        target="_blank">Google Maps</a></li>
+            </ul>
+        </section>
+
+        <br>
+
+        <!--Crearemos una sección de formulario-->
+        <section id="formulario">
+            <h2>Formulario</h2>
+            <!--Agregamos una lista-->
+            <form action="">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" placeholder="Ingrese su nombre" required>
+                <br>
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" placeholder="Ingrese su correo electrónico" required>
+                <br>
+                <label for="comentario">Comentario</label>
+                <textarea id="comentario" placeholder="Ingrese su comentario" required></textarea>
+                <br>
+                <button type="submit" class="btn-submit">Enviar Cuestionario</button>
+            </form>
+        </section>
+    </div>
 </body>
 
 </html>
